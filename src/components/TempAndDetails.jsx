@@ -16,7 +16,9 @@ const TempAndDetails = ({ weather: {
     speed, 
     humidity, 
     feels_like
-} }) => {
+},
+    units,
+}) => {
     const verticalDetails = [
         {
             id: 1,
@@ -34,10 +36,10 @@ const TempAndDetails = ({ weather: {
             id: 3,
             Icon: FiWind,
             title: "Wind",
-            value: `${speed.toFixed()} m/s`
+            value: `${speed.toFixed()} ${units === "metric" ? "km/h":"m/s"}`,
         }
     ]
-
+    console.log(units);
     const horizontalDetails = [
         {
             id: 1,
