@@ -3,6 +3,8 @@ import { DateTime } from "luxon";
 const API_KEY = import.meta.env.VITE_API_KEY ? import.meta.env.VITE_API_KEY : prompt("Enter the API Key");
 const BASE_URL = import.meta.env.VITE_BASE_URL;
 console.log(API_KEY);
+console.log(typeof(API_KEY));
+
 const getWeatherData = (infoType, searchParams) => {
     const url = new URL(BASE_URL + infoType);
     url.search = new URLSearchParams({ ...searchParams, appid: API_KEY });
