@@ -1,6 +1,6 @@
 import { DateTime } from "luxon";
 
-const API_KEY = import.meta.env.VITE_API_KEY ? import.meta.env.VITE_API_KEY : prompt("Enter the API Key");
+const API_KEY = import.meta.env.VITE_API_KEY ;
 const BASE_URL = import.meta.env.VITE_BASE_URL;
 console.log(API_KEY);
 
