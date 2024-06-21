@@ -1,3 +1,5 @@
+//Rendering the Dynamically updating the Temperature Data.
+
 import React from 'react'
 import { BiSolidDropletHalf } from 'react-icons/bi'
 import { FaThermometerEmpty } from 'react-icons/fa'

@@ -1,3 +1,4 @@
+//Rendering the Time and Location
 import React from 'react'
 
 const TimeAndLocation = ({weather:{formattedLocalTime,name,country}}) => {

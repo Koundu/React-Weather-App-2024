@@ -1,3 +1,4 @@
+//Getting Inputs from the User
 import React, { useState } from 'react'
 import { BiCurrentLocation, BiSearch } from 'react-icons/bi';
 

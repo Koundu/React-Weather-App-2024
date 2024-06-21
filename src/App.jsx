@@ -1,5 +1,5 @@
+//This is the MAin Operative Source of the Application
 import React, { useEffect, useState } from 'react'
-import { FaReact } from "react-icons/fa";
 import TopButtons from './components/TopButtons';
 import Inputs from './components/Inputs';
 import TimeAndLocation from './components/TimeAndLocation';
@@ -14,23 +14,33 @@ function capatalizeFirstLetter(str){
 }
 
 const App = () => {
-  const [query, setQuery] = useState({ q: "Guntur" })
+  //Reading the Queries
+  const [query, setQuery] = useState({ q: "Hyderabad" })
   const [units, setUnits] = useState('metric')
   const [weather, setWeather] = useState(null)
-
+  //Getting the Weather Data
   const getWeather = async () => {
+    try{
     const cityName = query.q ? query.q : 'current location';
     toast.info(`Fetching Weather data for ${capatalizeFirstLetter(cityName)}`)
     await getFormattedWeatherData({...query,units}).then((data)=>{
       toast.success(`Fetched weather data for ${data.name}, ${data.country}`)
       setWeather(data);
     })
+    }
+  //Cathcing the error when found
+    catch(error){
+      if(error.lat === undefined){
+        toast.error("City Not Found");
+      }
+    }
   }
 
   useEffect(()=>{
     getWeather();
   },[query,units])
 
+    //Changing the background color of the application when the temp is <=20 degrees
   const formatBackground = ()=>{
     if(!weather) return "from-cyan-600 to-blue-700";
     const threshold = units === 'metric' ? 20 : 60

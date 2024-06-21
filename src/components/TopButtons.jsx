@@ -1,26 +1,27 @@
+//Defining the NavBar Component
 import React from 'react'
 
 const TopButtons = ({setQuery}) => {
   const cities = [
     {
       id: 1,
-      name: 'London',
+      name: 'Visakhapatnam',
     },
     {
       id: 2,
-      name: 'Tokyo',
+      name: 'Chennai',
     },
     {
       id: 3,
-      name: 'Sydney',
+      name: 'Delhi',
     },
     {
       id: 4,
-      name: 'Paris',
+      name: 'Hyderabad',
     },
     {
       id: 5,
-      name: 'Toronto',
+      name: 'Vijayawada',
     }
   ]
 

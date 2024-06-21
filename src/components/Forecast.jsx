@@ -1,4 +1,7 @@
+//Display the Forecast Data
 import React from 'react'
+
+
 
 const Forecast = ({title,data}) => {
 
