@@ -1,8 +1,10 @@
 # Weather Predictor 
 
-The tech stack used for this project is
+The tech stack used for this project are
 
-Vite + React + Javascript
+1)Vite 
+2)React
+3)Javascript
 
 Additional Packages Utilized for this Project
 React Toastify
