@@ -52,7 +52,7 @@ Basic example of how to use the project.
     ```
 3. **Enter a location in the search bar to get the current weather and forecast for that location**.
 
-### Example Code
+## Example Code
 
 Here is a basic example of how a component in the app might look:
 
@@ -81,13 +81,13 @@ function Weather({ city }) {
 
 export default Weather;
 ```
-#### Features
+## Features
 
 - Current Weather: Get real-time weather information for any city.
 - 5-Day Forecast: View weather forecasts for the next five days.
 - Search Functionality: Easily search for weather information by city name.
 - Responsive Design: Optimized for both desktop and mobile devices.
-##### Contributing
+## Contributing
 
 . 1. Fork the repository:
 - Click the "Fork" button at the top right of this repository.
@@ -103,7 +103,7 @@ bash git push origin feature/your-feature-name . 7. Open a pull request:
 - Compare your branch with the original repository's branch.
 - Create the pull request.
 
-###### Licensing
+## Licensing
 License
 . The project's license information.
 . This project is licensed under the MIT License - see the LICENSE file for details.
